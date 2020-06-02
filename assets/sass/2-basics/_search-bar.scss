@@ -1,0 +1,95 @@
+
+
+.search_bar {
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255, .15);
+
+    form {
+        @include grid_12_column;
+        grid-gap: 15px;
+        padding: 30px 25px;
+        border-radius: 8px;
+        background-color: $wh_color;
+
+        .search_input {
+            @include flex_center;
+            justify-content: space-between;
+            height: 45px;
+            border-radius: 8px;
+            border: 1px solid $border_color;
+
+            &:nth-child(1) {
+                grid-column: 1 / 4;
+                grid-row: auto;
+            }
+
+            &:nth-child(2) {
+                grid-column: 4 / 7;
+                grid-row: auto;
+            }
+
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                background: none;
+                padding: 0px 10px;
+    
+                &::placeholder {
+                    color: $placeholder_color;
+                    font-size: $xsm_size;
+                    @include regular_typography;
+                    text-transform: capitalize;
+                }
+            }
+    
+            svg {
+                margin-right: 10px;
+                color: $placeholder_color;
+            }
+        }
+
+        select {
+            grid-column: 7 / 10;
+            grid-row: auto;
+        }
+
+        .custom-select {
+            height: 45px !important;
+            font-size: $xsm_size !important;
+            font-weight: $regular_weight !important;
+            color: $placeholder_color !important;
+            border-radius: 8px !important;
+            border: 1px solid $border_color !important;
+
+            option {
+                height: 45px;
+            }
+        }
+
+        .search_btn {
+            grid-column: 10 / 12;
+            grid-row: auto;
+            @include banner_search_btn;
+            color: $wh_color;
+            font-size: $sm_size;
+            @include regular_typography;
+            text-transform: capitalize;
+            border: none;
+        }
+
+        .more_feature {
+            grid-column: 12 / 13;
+            grid-row: auto;
+            @include banner_search_btn;
+
+            svg {
+                width: 25px;
+                height: 25px;
+                color: $wh_color;
+            }
+        }
+    }
+}

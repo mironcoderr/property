@@ -1,0 +1,50 @@
+
+
+// =====================================
+//       ALL TYPOGRAPHY VARIABLES
+//======================================
+// FONT FAMILY 
+$primary_family: 'Heebo', sans-serif;
+$secondary_family: 'Rubik', sans-serif;
+$thirdary_family: 'Roboto', sans-serif;
+
+
+// FONT WEIGHT 
+$regular_weight: 400;
+$medium_weight: 500;
+$bold_weight: 700;
+
+
+// FONT SIZE 
+$xsm_size: 14px;
+$xmd_size: 24px;
+$xlg_size: 55px;
+
+$sm_size: 16px;
+$md_size: 18px;
+$lg_size: 36px;
+
+
+// =====================================
+//         ALL COLOR VARIABLES
+//======================================
+$brand_color: #ff6025;
+$menu_color: #707070;
+$heading_color: #404040;
+$text_color: #555555;
+$wh_color: #ffffff;
+$border_color: #bbb;
+$placeholder_color: #777777;
+$brand_gradient: linear-gradient(to right, #ff7060, #ff6025);
+
+// HOVER COLOR
+$gradient_hover: linear-gradient(to left, #ff7060, #ff6025);
+
+
+// =====================================
+//         ALL SHADOW VARIABLES
+//======================================
+$medium_shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+$navbar_button_shadow: 0px 12px 15px 0px rgba(249, 73, 67, 0.3);
+$banner_button_shadow: 0px 10px 35px 5px rgba(156, 63, 63, 0.6);
+

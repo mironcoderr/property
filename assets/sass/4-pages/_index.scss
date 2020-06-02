@@ -1,0 +1,327 @@
+
+
+#banner_part {
+    background-image: url(../images/banner-2.jpg);
+    @include background_property;
+    padding: 140px 0px 150px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        @include background_before;
+    }
+
+    .container {
+        text-align: center;
+
+        h1 {
+            width: 580px;
+            color: $wh_color;
+            font-size: $xlg_size;
+            @include bold_typography;
+            margin: 0 auto;
+        }
+
+        p {
+            color: $wh_color;
+            font-size: $md_size;
+            @include regular_typography;
+            margin-top: 10px;
+        }
+
+        .banner_btn {
+            margin-top: 45px;
+
+            .primary_btn {
+                width: 110px;
+                margin: 0px 8px;
+                padding: 12px 25px;
+                font-size: $sm_size;
+                font-weight: $regular_weight;
+                position: relative;
+            }
+
+            .active {
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: -8px;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(45deg);
+                    border-radius: 3px;
+                    border-top: 12px solid transparent;
+                    border-right: 12px solid $brand_color;
+                    border-left: 12px solid transparent;
+                    border-bottom: 12px solid $brand_color;
+                }
+            }
+        }
+    }
+}
+
+
+
+// FEATURE SECTION OF INDEX PAGE
+#feature_part {
+    padding: 140px 0px;
+    background: #f7f7f7;
+
+    .container {
+        .feature_heading {
+            text-align: center;
+            margin-bottom: 45px;
+
+            h2 {
+                color: $heading_color;
+                font-size: $lg_size;
+                @include medium_typography;
+                text-transform: capitalize;
+            }
+        }
+
+        .feature_card {
+            width: 350px;
+            padding: 15px;
+            border-radius: 8px;
+            background: $wh_color;
+
+            .feature_thumb {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                }
+
+                .feature_overlay {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+
+                    h3 {
+                        color: $wh_color;
+                        font-size: $xmd_size;
+                        @include medium_typography;
+                        position: absolute;
+                        bottom: 15px;
+                        left: 15px;
+
+                        span {
+                            font-size: $xsm_size;
+                            @include regular_typography;
+                        }
+                    }
+
+                    .thumb_icon {
+                        position: absolute;
+                        bottom: 15px;
+                        right: 15px;
+                        width: 100px;
+
+                        i {
+                            cursor: pointer;
+                            width: 40px;
+                            height: 35px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-radius: 5px;
+                            background: rgba(0, 0, 0, 0.5);
+                            display: inline-block;
+                            margin: 0px 3px;
+    
+                            svg {
+                                color: #dddddd;
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .feature_content {
+                padding: 15px 10px;
+
+                .feature_descrip {
+                    li {
+                        @include flex_center;
+                        justify-content: start;
+
+                        h3 {
+                            color: $text_color;
+                            font-size: $xsm_size;
+                            @include medium_typography;
+                            margin-right: 10px;
+                        }
+
+                        p {
+                            color: $text_color;
+                            font-size: $xsm_size;
+                            @include regular_typography;
+                        }
+                    }
+
+                    li:nth-child(1) {
+                        margin-bottom: 5px !important;
+                    }
+                }
+
+                .feature_author_content {
+                    @include flex_center;
+                    justify-content: space-between;
+                    border-top: 1px solid #eeeeee;
+                    padding-top: 15px;
+
+                    .feature_author {
+                        @include flex_center;
+                        justify-content: start;
+
+                        .author_img {
+                            margin-right: 10px;
+                            border-radius: 50%;
+                            border: 2px solid $brand_color;
+    
+                            img {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                border: 2px solid $wh_color;
+                            }
+                        }
+    
+                        ul {
+                            li {
+                                a {
+                                    color: $heading_color;
+                                    font-size: $xsm_size;
+                                    @include medium_typography;
+                                    text-transform: capitalize;
+                                }
+                            }
+    
+                            li:nth-child(2) {
+                                color: $heading_color;
+                                font-size: $xsm_size;
+                                @include regular_typography;
+                                text-transform: capitalize;
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+
+                    .feature_dots {
+                        cursor: pointer;
+                        width: 25px;
+                        height: 35px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-radius: 5px;
+                        background: rgba(0, 0, 0, 0.05);
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                            color: $heading_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// CITY SECTION OF INDEX PAGE
+#city_part {
+    padding: 140px 0px;
+    background: #fbfbfb;
+
+    .container {
+        .city_heading {
+            text-align: center;
+            margin-bottom: 45px;
+            
+            h2 {
+                color: $heading_color;
+                font-size: $lg_size;
+                @include medium_typography;
+                text-transform: capitalize;
+            }
+        }
+
+        .city_parent {
+            width: 100%;
+            height: 500px;
+            @include grid_12_column;
+            grid-template-rows: repeat(12, 1fr);
+            grid-gap: 15px;
+
+            .city_child {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border-radius: 8px;
+                z-index: 1;
+
+                &::before {
+                    @include background_before;
+                    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+                    border-radius: 8px;
+                }
+            }
+
+            .city_child:nth-child(1) {
+                grid-area: 1 / 1 / 9 / 4;
+                background-image: url(../images/dhaka.jpg);
+                @include background_property;
+            }
+
+            .city_child:nth-child(2) {
+                grid-area: 1 / 4 / 5 / 8;
+                background-image: url(../images/chattagram.jpg);
+                @include background_property;
+            }
+
+            .city_child:nth-child(3) {
+                grid-area: 1 / 8 / 5 / 13;
+                background-image: url(../images/barishal.jpg);
+                @include background_property;
+            }
+
+            .city_child:nth-child(4) {
+                grid-area: 5 / 4 / 9 / 7;
+                background-image: url(../images/barishal.jpg);
+                @include background_property;
+            }
+
+            .city_child:nth-child(5) {
+                grid-area: 5 / 7 / 9 / 10;
+                background-image: url(../images/dhaka.jpg);
+                @include background_property;
+            }
+
+            .city_child:nth-child(6) {
+                grid-area: 9 / 1 / 13 / 5;
+                background-image: url(../images/dhaka.jpg);
+                @include background_property;
+            }
+
+            .city_child:nth-child(7) {
+                grid-area: 9 / 5 / 13 / 10;
+                background-image: url(../images/dhaka.jpg);
+                @include background_property;
+            }
+
+            .city_child:nth-child(8) {
+                grid-area: 5 / 10 / 13 / 13;
+                background-image: url(../images/dhaka.jpg);
+                @include background_property;
+            }
+        }
+    }
+}
