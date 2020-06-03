@@ -17,12 +17,12 @@ $bold_weight: 700;
 
 // FONT SIZE 
 $xsm_size: 14px;
-$xmd_size: 24px;
+$xmd_size: 22px;
 $xlg_size: 55px;
 
 $sm_size: 16px;
 $md_size: 18px;
-$lg_size: 36px;
+$lg_size: 32px;
 
 
 // =====================================
@@ -40,11 +40,11 @@ $brand_gradient: linear-gradient(to right, #ff7060, #ff6025);
 // HOVER COLOR
 $gradient_hover: linear-gradient(to left, #ff7060, #ff6025);
 
+// OVERLAY GRADIENT BACKGROUND
+$background_overlay: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+
 
 // =====================================
 //         ALL SHADOW VARIABLES
 //======================================
-$medium_shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
-$navbar_button_shadow: 0px 12px 15px 0px rgba(249, 73, 67, 0.3);
-$banner_button_shadow: 0px 10px 35px 5px rgba(156, 63, 63, 0.6);
-
+$large-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.08);
